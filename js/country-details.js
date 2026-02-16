@@ -499,6 +499,376 @@ const countryDatabase = {
             'Have travel insurance throughout stay'
         ],
         govLink: 'https://www.diplomatie.gouv.fr/en/'
+    },
+
+    'New Zealand': {
+        region: 'Oceania',
+        emoji: '🇳🇿',
+        visas: [
+            { name: 'Visitor Visa', description: 'Short-term tourism and visiting friends/family', processing: '1-3 weeks', cost: 'NZD $100' },
+            { name: 'Work Visa', description: 'Temporary and skilled work permits', processing: '4-12 weeks', cost: 'Variable' },
+            { name: 'Student Visa', description: 'For study at recognised institutions', processing: '2-6 weeks', cost: 'NZD $300' },
+            { name: 'Resident Visa', description: 'Pathways to residency for skilled workers', processing: 'Months', cost: 'Variable' }
+        ],
+        keyInfo: [
+            'Points-based skilled migration pathways',
+            'Working Holiday agreements for youth from many countries',
+            'High quality education and healthcare systems',
+            'Strong focus on skilled labour shortages in regional areas'
+        ],
+        requirements: [
+            'Valid passport (minimum 3 months beyond stay)',
+            'Completed visa application and required forms',
+            'Proof of funds and accommodation',
+            'Medical and character checks for longer stays',
+            'Offer of employment or confirmed enrollment (when applicable)'
+        ],
+        blog: {
+            featured: {
+                title: 'New Zealand Visa Guide 2026: Work, Study & Visitor Options',
+                excerpt: 'How to choose the right New Zealand visa, meet requirements and transition to residency.',
+                content: 'New Zealand attracts skilled workers, students and travellers with clear migration pathways and a high quality of life. Visitor visas allow short stays for tourism and family visits while skilled work visas are available through employer sponsorship or points-based skilled migration. International students can work part-time during studies and may access post-study work visas that help build residency pathways. For residency, skilled migrants must meet points thresholds based on age, experience and qualifications. Health and character checks are standard for long-term visas, so prepare documentation early. Regional job offers often receive priority for visas, making provincial towns good options for applicants. Processing times vary but planning and complete documentation reduces delays.',
+                date: 'Feb 16, 2026',
+                author: 'NZ Immigration Advisor'
+            },
+            related: [
+                { title: 'Working Holiday New Zealand: Eligibility & Application Tips', excerpt: 'How to apply and what to expect while working abroad in NZ', date: 'Feb 12, 2026' },
+                { title: 'Study in New Zealand: Universities, Fees & Work Rights', excerpt: 'Guide to studying and working in New Zealand as an international student', date: 'Feb 10, 2026' },
+                { title: 'Skilled Migration NZ: Points, Occupations & Residency', excerpt: 'Pathways for skilled workers to gain residency in New Zealand', date: 'Feb 8, 2026' }
+            ]
+        },
+        processingInfo: { standard: '2-12 weeks', expedited: '1-4 weeks (select cases)', cost: 'NZD $100-$500', notes: 'Times depend on visa type and completeness of application' },
+        tips: [ 'Apply early and check medical requirements', 'Use official immigration portal', 'Keep original documents ready', 'Consider regional job offers for easier sponsorship' ],
+        govLink: 'https://www.immigration.govt.nz/'
+    },
+
+    'United Arab Emirates': {
+        region: 'Middle East',
+        emoji: '🇦🇪',
+        visas: [
+            { name: 'Tourist Visa', description: 'Short visits for tourism or business', processing: 'Days', cost: 'Variable' },
+            { name: 'Employment Visa', description: 'Sponsored work visas by UAE employers', processing: '2-6 weeks', cost: 'Variable' },
+            { name: 'Golden Visa', description: 'Long-term residency for investors and specialists', processing: 'Weeks', cost: 'Variable' },
+            { name: 'Remote Work Visa', description: 'Temporary residency for remote workers', processing: 'Days', cost: 'Variable' }
+        ],
+        keyInfo: [
+            'Rapidly expanding long-term residency options',
+            'Strong demand for skilled professionals in technology and finance',
+            'Investor and golden visa programs for high-net-worth applicants',
+            'No personal income tax for residents'
+        ],
+        requirements: [
+            'Valid passport',
+            'Sponsor or employer confirmation for work visas',
+            'Proof of accommodation',
+            'Medical screening and biometric enrolment',
+            'Investment proof for investor visas'
+        ],
+        blog: {
+            featured: {
+                title: 'UAE Visa Guide 2026: Work, Golden Visa & Remote Options',
+                excerpt: 'Understand UAE visa categories, golden visa eligibility and steps for sponsored employment.',
+                content: 'The UAE offers a variety of visas tailored to tourists, skilled workers and investors. Employment visas are typically employer-sponsored and require a work permit and medical checks. The Golden Visa program provides long-term residency for investors, entrepreneurs and highly skilled professionals, making the UAE attractive for long-term relocation. Remote work visas enable freelancers and remote employees to base themselves in UAE for limited periods. Processing is generally fast but depends on sponsorship and the type of visa. For investors, documenting business registration and proof of funds is essential. Employers handle most procedural steps for work visas, but applicants should verify contract terms and benefits before relocation.',
+                date: 'Feb 15, 2026',
+                author: 'UAE Immigration Consultant'
+            },
+            related: [
+                { title: 'Golden Visa UAE: Eligibility & Investor Requirements', excerpt: 'Who qualifies and how to apply for long-term residency in the UAE', date: 'Feb 13, 2026' },
+                { title: 'Working in Dubai: Employment Contracts & Visa Sponsorship', excerpt: 'Key considerations when accepting a job and relocating to Dubai', date: 'Feb 11, 2026' },
+                { title: 'Remote Work Visa UAE: How to Apply & What to Expect', excerpt: 'Guide for digital nomads and remote workers seeking temporary residency', date: 'Feb 9, 2026' }
+            ]
+        },
+        processingInfo: { standard: 'Days to weeks', expedited: 'Days', cost: 'Variable', notes: 'Sponsor typically handles most steps' },
+        tips: [ 'Confirm visa sponsorship details with employer', 'Keep electronic copies of contracts', 'Understand healthcare and insurance expectations', 'Check entry requirements for dependents' ],
+        govLink: 'https://www.government.ae/en/information-and-services/visa-and-emirates-id'
+    },
+
+    'Azerbaijan': {
+        region: 'Asia',
+        emoji: '🇦🇿',
+        visas: [
+            { name: 'Electronic Visa (e-visa)', description: 'Online visa for tourism and business', processing: '1-3 days', cost: 'Variable' },
+            { name: 'Business Visa', description: 'For short-term business activities', processing: 'Days', cost: 'Variable' },
+            { name: 'Work Permit', description: 'Employer-sponsored work permits', processing: 'Weeks', cost: 'Variable' }
+        ],
+        keyInfo: [
+            'E-visa available for many nationalities',
+            'Strategic location between Europe and Asia',
+            'Growing energy and technology sectors',
+            'Competitive cost of living compared to regional hubs'
+        ],
+        requirements: [
+            'Valid passport with at least 6 months validity',
+            'Completed e-visa application (when applicable)',
+            'Letter of invitation for some visa types',
+            'Proof of accommodation and return ticket'
+        ],
+        blog: {
+            featured: {
+                title: 'Azerbaijan Visa Guide 2026: e-Visa, Business Visits & Work Permits',
+                excerpt: 'How to obtain an e-visa, business entry and longer-term work permits in Azerbaijan.',
+                content: 'Azerbaijan provides an efficient e-visa system for many nationalities, making short visits straightforward. Business visas and work permits are commonly used for professionals joining oil, gas and technology projects. Applicants should ensure passports are valid and invitations or contracts are ready for upload when required. Regional travel from Azerbaijan provides easy connections across the Caucasus and Central Asia. Processing times are typically fast for e-visas but allow extra time for work permits and residency applications.',
+                date: 'Feb 14, 2026',
+                author: 'Caucasus Travel Expert'
+            },
+            related: [
+                { title: 'Azerbaijan e-Visa: Step-by-Step Application Guide', excerpt: 'Applying online for short-term visits to Azerbaijan', date: 'Feb 12, 2026' },
+                { title: 'Working in Baku: Permits, Jobs & Living Costs', excerpt: 'What foreign professionals should know before relocating', date: 'Feb 10, 2026' }
+            ]
+        },
+        processingInfo: { standard: '1-21 days', expedited: '1-3 days (e-visa)', cost: 'Variable', notes: 'e-visa is fastest for tourist/business visits' },
+        tips: [ 'Check e-visa eligibility before travel', 'Keep invitation letters for business trips', 'Understand customs and entry rules' ],
+        govLink: 'https://www.evisa.gov.az/'
+    },
+
+    'Mexico': {
+        region: 'Americas',
+        emoji: '🇲🇽',
+        visas: [
+            { name: 'Tourist Card (FMM)', description: 'Tourist authorization for short stays', processing: 'On arrival/online', cost: 'Variable' },
+            { name: 'Temporary Resident Visa', description: 'For stays longer than 180 days', processing: 'Weeks', cost: 'Variable' },
+            { name: 'Work Visa', description: 'Employer-sponsored work permits', processing: 'Weeks', cost: 'Variable' }
+        ],
+        keyInfo: [ 'Many nationalities visa-exempt for short tourist stays', 'Flexible temporary residency options', 'Popular destination for retirees and digital nomads', 'Robust expat communities in major cities' ],
+        requirements: [ 'Valid passport', 'FMM or visa depending on nationality', 'Proof of funds for longer stays', 'Work contract for employment visas' ],
+        blog: {
+            featured: {
+                title: 'Mexico Visa Guide 2026: Tourist Stays, Temporary Residency & Work Visas',
+                excerpt: 'Everything travellers and longer-stay applicants need to know about Mexican visa and residency options.',
+                content: 'Mexico welcomes many visitors with visa-free entry for selected nationalities and a straightforward tourist card (FMM) process. For those planning extended stays, the Temporary Resident visa offers work and residency rights for a limited period and can lead to permanent residency. Mexico is a popular choice for retirees and digital nomads due to favorable living costs and vibrant culture. Work visas require employer sponsorship and proper documentation; applicants should verify requirements with Mexican consulates. Health insurance and clear proof of finances help smooth applications for longer stays.',
+                date: 'Feb 13, 2026',
+                author: 'Mexico Immigration Advisor'
+            },
+            related: [
+                { title: 'Mexico Temporary Residency: Requirements & Steps', excerpt: 'How to apply for longer stays and residency in Mexico', date: 'Feb 11, 2026' },
+                { title: 'Digital Nomads in Mexico: Visas, Cost & Best Cities', excerpt: 'Guide to living and working remotely from Mexico', date: 'Feb 9, 2026' }
+            ]
+        },
+        processingInfo: { standard: 'Days to weeks', expedited: 'Varies', cost: 'Variable', notes: 'Consulate rules vary by country' },
+        tips: [ 'Confirm FMM rules for your passport', 'Carry proof of onward travel when entering', 'Register with local authorities if staying long-term' ],
+        govLink: 'https://www.gob.mx/segob'
+    },
+
+    'Thailand': {
+        region: 'Asia',
+        emoji: '🇹🇭',
+        visas: [
+            { name: 'Tourist Visa', description: 'Short-term tourist stays', processing: 'Days', cost: 'Variable' },
+            { name: 'Education Visa', description: 'For study and language programs', processing: 'Weeks', cost: 'Variable' },
+            { name: 'Non-Immigrant Work Visa', description: 'Employer-sponsored work visas', processing: 'Weeks', cost: 'Variable' }
+        ],
+        keyInfo: [ 'Visa-on-arrival for many nationalities', 'Popular for long-stay retirement visas', 'Growing digital nomad community', 'Large tourism infrastructure' ],
+        requirements: [ 'Valid passport', 'Completed application form', 'Proof of accommodation and funds', 'Work permit for employment', 'Health checks for long stays' ],
+        blog: {
+            featured: {
+                title: 'Thailand Visa Guide 2026: Tourist, Education & Long-Term Options',
+                excerpt: 'How to navigate Thailand’s visa-on-arrival, student and work visa processes.',
+                content: 'Thailand offers multiple entry and residency options for tourists, students and workers. Many nationalities qualify for visa-on-arrival or visa-exempt entry for short visits. Students and workers must secure the appropriate non-immigrant visas and work permits, often requiring sponsorship from an institution or employer. Retirement visas and long-term stay options are available to applicants meeting income or savings thresholds. For remote workers, Thailand has introduced flexible visa options in some cases—always check the latest consulate guidance before planning long-term stays.',
+                date: 'Feb 12, 2026',
+                author: 'Thailand Visa Specialist'
+            },
+            related: [ { title: 'Thailand Retirement Visa: Eligibility & Costs', excerpt: 'Guide to long-term retirement visas in Thailand', date: 'Feb 10, 2026' }, { title: 'Thailand Digital Nomad Options: Rules & Cities', excerpt: 'Where remote workers can live and work in Thailand', date: 'Feb 8, 2026' } ]
+        },
+        processingInfo: { standard: 'Days to weeks', expedited: 'Varies by consulate', cost: 'Variable', notes: 'Tourist processing often fastest' },
+        tips: [ 'Check visa-on-arrival eligibility', 'Keep passport photos and copies ready', 'Understand work permit rules before accepting jobs' ],
+        govLink: 'https://www.immigration.go.th/'
+    },
+
+    'Spain': {
+        region: 'Europe',
+        emoji: '🇪🇸',
+        visas: [
+            { name: 'Schengen Short-Stay Visa', description: 'Tourism within Schengen area (90 days)', processing: '2-4 weeks', cost: '€80' },
+            { name: 'Student Visa', description: 'For studies at Spanish institutions', processing: 'Weeks', cost: 'Variable' },
+            { name: 'Digital Nomad / Non-Lucrative Visa', description: 'For remote workers and non-working residents', processing: 'Weeks', cost: 'Variable' }
+        ],
+        keyInfo: [ 'Part of Schengen with access to 26 countries', 'Popular digital nomad destinations like Barcelona and Valencia', 'Strong regional healthcare and education', 'Golden Visa options for investors' ],
+        requirements: [ 'Valid passport', 'Travel insurance for Schengen', 'Proof of funds for longer stays', 'University admission or employment contract when applicable' ],
+        blog: {
+            featured: {
+                title: 'Spain Visa Guide 2026: Schengen, Digital Nomads & Residency',
+                excerpt: 'Learn about Spain’s Schengen rules, digital nomad options and investor visas.',
+                content: 'Spain offers Schengen short-stay visas for tourism and business plus specialized long-stay visas for students, workers and investors. Digital nomad visas and non-lucrative residency options attract remote workers seeking European access with pleasant climates and affordable living. The Golden Visa program provides residency for significant property or investment purchases. Processing times vary by consulate but are generally in line with Schengen timelines. For students, university enrollment and proof of funds are key to approval.',
+                date: 'Feb 11, 2026',
+                author: 'Spain Travel & Visa Consultant'
+            },
+            related: [ { title: 'Spain Digital Nomad Visa: How to Apply & Where to Live', excerpt: 'Steps to apply and best Spanish cities for remote work', date: 'Feb 9, 2026' }, { title: 'Schengen from Spain: Travel 26 Countries Easily', excerpt: 'Using Spain as your Schengen entry point', date: 'Feb 7, 2026' } ]
+        },
+        processingInfo: { standard: '2-4 weeks', expedited: '1 week (select cases)', cost: '€80 (Schengen), Variable for other visas', notes: 'Schengen rules apply' },
+        tips: [ 'Prepare full travel itinerary for Schengen', 'Ensure health insurance covers entire Schengen stay', 'Consider regional consulate timelines' ],
+        govLink: 'https://www.exteriores.gob.es/en/servicios-al-ciudadano/InformacionParaExtranjeros/Paginas/informacion-para-extranjeros.aspx'
+    },
+
+    'Portugal': {
+        region: 'Europe',
+        emoji: '🇵🇹',
+        visas: [
+            { name: 'Schengen Short-Stay', description: '90-day tourism/business within Schengen', processing: '2-4 weeks', cost: '€80' },
+            { name: 'D7 Passive Income Visa', description: 'For retirees and remote workers with passive income', processing: 'Weeks to months', cost: 'Variable' },
+            { name: 'Golden Visa', description: 'Investment residency for qualifying investors', processing: 'Weeks', cost: 'Variable' }
+        ],
+        keyInfo: [ 'D7 visa popular with remote workers and retirees', 'Golden Visa options for investors', 'Affordable European living with quality healthcare', 'English widely spoken in urban areas' ],
+        requirements: [ 'Valid passport', 'Proof of sufficient passive income for D7', 'Health insurance and background checks', 'Proof of accommodation' ],
+        blog: {
+            featured: {
+                title: 'Portugal Visa Guide 2026: D7, Golden Visa & Living in Portugal',
+                excerpt: 'Options for long-term stays in Portugal including the D7 and Golden Visa programs.',
+                content: 'Portugal remains a top European destination for retirees, remote workers and investors. The D7 visa allows individuals with passive income to reside in Portugal with relatively simple financial requirements. The Golden Visa attracts investors who meet property or capital investment thresholds. Portugal’s affordable cost of living, mild climate, and English-friendly cities make it attractive for long-term relocation. Students and workers also find clear visa routes, but documentation for income, insurance and accommodation is essential.',
+                date: 'Feb 10, 2026',
+                author: 'Portugal Relocation Advisor'
+            },
+            related: [ { title: 'Portugal D7 Visa: Income Requirements & Application Steps', excerpt: 'Guide to qualifying for the D7 passive income visa', date: 'Feb 8, 2026' }, { title: 'Portugal Golden Visa: Investment Options & Residency', excerpt: 'How to qualify for investor residency in Portugal', date: 'Feb 6, 2026' } ]
+        },
+        processingInfo: { standard: '2-12 weeks', expedited: 'Varies', cost: 'Variable', notes: 'D7 requires proof of stable income' },
+        tips: [ 'Document passive income clearly for D7', 'Consider local tax and healthcare implications', 'Use a local lawyer for Golden Visa investments' ],
+        govLink: 'https://www.sef.pt/en/pages/conteudo-detalhe.aspx?nID=23'
+    }
+    ,
+    'Israel': {
+        region: 'Middle East',
+        emoji: '🇮🇱',
+        visas: [
+            { name: 'Tourist Visa', description: 'Short-term visits and tourism', processing: 'Days to weeks', cost: 'Variable' },
+            { name: 'Work Visa', description: 'Employer-sponsored work permits', processing: 'Weeks', cost: 'Variable' },
+            { name: 'Student Visa', description: 'For study at accredited institutions', processing: 'Weeks', cost: 'Variable' }
+        ],
+        keyInfo: [
+            'Popular destination for tech and academic exchange',
+            'Some nationalities visa-exempt for short stays',
+            'Work visas typically require employer sponsorship',
+            'Conversion to residency available for long-term skilled workers'
+        ],
+        requirements: [
+            'Valid passport',
+            'Completed visa application',
+            'Proof of funds and accommodation',
+            'Employment contract or admission letter (when applicable)'
+        ],
+        blog: {
+            featured: {
+                title: 'Israel Visa Guide 2026: Visitor, Work & Study Options',
+                excerpt: 'Practical steps for visiting, working or studying in Israel, including sponsorship and document checklists.',
+                content: 'Israel is a hub for technology, research and culture, attracting visitors, students and professionals. Many visitors enter visa-free depending on nationality; others must apply for tourist visas or entry permits. Work visas are employer-sponsored and require a valid job offer and permit processing. Students should secure confirmation from accredited institutions and be prepared for healthcare and housing arrangements. For long-term stays, understanding the residency pathways and biometric requirements is essential. Always check the specific consulate guidance before applying.',
+                date: 'Feb 16, 2026',
+                author: 'Israel Immigration Advisor'
+            },
+            related: [
+                { title: 'Working in Israel: Sponsorship & Visa Steps', excerpt: 'Steps for foreign professionals seeking employment and work permits in Israel', date: 'Feb 14, 2026' },
+                { title: 'Study in Israel: Universities & Student Visa Guide', excerpt: 'Applying to Israeli universities and student visa tips', date: 'Feb 12, 2026' }
+            ]
+        },
+        processingInfo: { standard: 'Days to weeks', expedited: 'Varies', cost: 'Variable', notes: 'Check consulate processing times' },
+        tips: [ 'Confirm visa-exemption rules for your passport', 'Prepare original academic and employment documents', 'Check healthcare and insurance requirements' ],
+        govLink: 'https://www.gov.il/en/departments/immigration'
+    },
+
+    'South Korea': {
+        region: 'Asia',
+        emoji: '🇰🇷',
+        visas: [
+            { name: 'C-3 Tourist/Short-Term', description: 'Short stays for tourism and business', processing: 'Days', cost: 'Variable' },
+            { name: 'E-7 Work Visa', description: 'Skilled employment visas', processing: 'Weeks', cost: 'Variable' },
+            { name: 'D-2 Student Visa', description: 'For higher education students', processing: 'Weeks', cost: 'Variable' }
+        ],
+        keyInfo: [
+            'Visa-waiver program for many nationalities',
+            'Strong demand for IT and engineering professionals',
+            'Student pathways include work opportunities during studies'
+        ],
+        requirements: [
+            'Valid passport',
+            'Completed application forms and photos',
+            'Sponsorship letter or acceptance letter',
+            'Criminal record and health checks for long stays'
+        ],
+        blog: {
+            featured: {
+                title: 'South Korea Visa Guide 2026: Work, Study & Short Visits',
+                excerpt: 'Overview of visa-waiver rules, student visas and skilled worker opportunities in South Korea.',
+                content: 'South Korea attracts students and professionals with strong technology and education sectors. Short-term visitors from many countries enjoy visa-free entry, but longer stays require appropriate visas and sponsorship. Skilled workers in IT, engineering and healthcare have multiple employment-based options, often requiring employer registration and documentation. Student visas enable part-time work under specific conditions and can be gateways to job offers post-graduation.',
+                date: 'Feb 16, 2026',
+                author: 'Korea Immigration Specialist'
+            },
+            related: [ { title: 'Working in Korea: Visa Types & Employer Sponsorship', excerpt: 'Understand employer-sponsored visas and obligations', date: 'Feb 14, 2026' }, { title: 'Korea Student Visa: Universities & Work Options', excerpt: 'Student visa rules and part-time work guidance', date: 'Feb 12, 2026' } ]
+        },
+        processingInfo: { standard: 'Days to weeks', expedited: 'Varies by consulate', cost: 'Variable', notes: 'Check embassy for up-to-date rules' },
+        tips: [ 'Verify visa-waiver status for your nationality', 'Keep employer documents and contracts ready', 'Register with local immigration after arrival' ],
+        govLink: 'https://www.immigration.go.kr/immigration_eng/index.do'
+    },
+
+    'Malaysia': {
+        region: 'Asia',
+        emoji: '🇲🇾',
+        visas: [
+            { name: 'MM2H', description: 'Malaysia My Second Home program for long-term residency', processing: 'Weeks to months', cost: 'Variable' },
+            { name: 'Employment Pass', description: 'Work permits for foreign professionals', processing: 'Weeks', cost: 'Variable' },
+            { name: 'Student Visa', description: 'For studying at Malaysian institutions', processing: 'Weeks', cost: 'Variable' }
+        ],
+        keyInfo: [ 'MM2H offers long-term residency for qualifying applicants', 'Strong healthcare and education sectors', 'Growing tech and services job markets' ],
+        requirements: [ 'Valid passport', 'Proof of financial capacity (for MM2H)', 'Employer sponsorship or acceptance letter', 'Medical and background checks when required' ],
+        blog: {
+            featured: {
+                title: 'Malaysia Visa Guide 2026: MM2H, Work & Study Options',
+                excerpt: 'Guide to long-term residency through MM2H, work permits and student visas in Malaysia.',
+                content: 'Malaysia offers flexible options for retirees, students and skilled workers. The MM2H program targets long-term residents with financial requirements and clear benefits. Employment passes require employer sponsorship and are common in tech and services sectors. International students can study at competitive tuition rates with opportunities for internships and work placements in certain sectors.',
+                date: 'Feb 16, 2026',
+                author: 'Malaysia Immigration Consultant'
+            },
+            related: [ { title: 'MM2H Explained: Eligibility & Benefits', excerpt: 'Step-by-step for Malaysia My Second Home applicants', date: 'Feb 14, 2026' }, { title: 'Working in Malaysia: Employment Pass & Sponsorship', excerpt: 'Employer-sponsored work permit guidance', date: 'Feb 12, 2026' } ]
+        },
+        processingInfo: { standard: 'Weeks to months', expedited: 'Varies', cost: 'Variable', notes: 'MM2H has specific financial requirements' },
+        tips: [ 'Check MM2H financial thresholds', 'Use official portals for applications', 'Confirm healthcare coverage for long stays' ],
+        govLink: 'https://www.imi.gov.my/'
+    },
+
+    'Philippines': {
+        region: 'Asia',
+        emoji: '🇵🇭',
+        visas: [
+            { name: 'Tourist Visa', description: 'Short-term tourism and visits', processing: 'On arrival/online', cost: 'Variable' },
+            { name: 'Work Visa', description: 'Employer-sponsored work permits', processing: 'Weeks', cost: 'Variable' },
+            { name: 'Student Visa', description: 'For studies at Philippine institutions', processing: 'Weeks', cost: 'Variable' }
+        ],
+        keyInfo: [ 'Visa-on-arrival for some nationalities', 'Popular for long-term stays by retirees and OFWs', 'Growing BPO and service sector opportunities' ],
+        requirements: [ 'Valid passport', 'Relevant application forms', 'Work contract or school acceptance (when applicable)', 'Police and medical clearances for long stays' ],
+        blog: {
+            featured: {
+                title: 'Philippines Visa Guide 2026: Tourist, Work & Study Options',
+                excerpt: 'Tips for visiting, working and studying in the Philippines including common requirements and timelines.',
+                content: 'The Philippines offers visa flexibility for many visitors and clear pathways for temporary work and study. The BPO and services industries attract foreign talent on employer-sponsored work permits. Students should confirm admission and prepare necessary police and health clearances for longer stays. Retirement programs are also popular, with tailored visa options for long-term visitors and retirees.',
+                date: 'Feb 16, 2026',
+                author: 'Philippines Immigration Specialist'
+            },
+            related: [ { title: 'Working in the Philippines: Permits & Visas', excerpt: 'Employer-sponsored visa processes and common pitfalls', date: 'Feb 14, 2026' }, { title: 'Study in the Philippines: Universities & Student Visas', excerpt: 'How to apply and what documents are required', date: 'Feb 12, 2026' } ]
+        },
+        processingInfo: { standard: 'Days to weeks', expedited: 'Varies', cost: 'Variable', notes: 'Check specific consulate guidance' },
+        tips: [ 'Confirm entry rules for your nationality', 'Arrange medical checks early for long visas', 'Keep copies of all submitted documents' ],
+        govLink: 'https://www.immigration.gov.ph/'
+    },
+
+    'Switzerland': {
+        region: 'Europe',
+        emoji: '🇨🇭',
+        visas: [
+            { name: 'Schengen Short-Stay', description: 'Tourism and business within Schengen (90 days)', processing: '2-4 weeks', cost: '€80' },
+            { name: 'Work Permit', description: 'Employer-sponsored work permits', processing: 'Weeks to months', cost: 'Variable' },
+            { name: 'Student Visa', description: 'For study at Swiss institutions', processing: 'Weeks', cost: 'Variable' }
+        ],
+        keyInfo: [ 'Part of Schengen area', 'High quality of life and salaries', 'Strong finance and pharmaceutical sectors' ],
+        requirements: [ 'Valid passport', 'Proof of funds and accommodation', 'Employer sponsorship for work permits', 'Health insurance for residents' ],
+        blog: {
+            featured: {
+                title: 'Switzerland Visa Guide 2026: Schengen, Work & Study',
+                excerpt: 'Guide to visiting, working and studying in Switzerland, including work permit pathways and residency basics.',
+                content: 'Switzerland combines high living standards with strong professional opportunities, especially in finance, pharma and engineering. Schengen visas allow short travel across Europe while work permits are employer-driven and often require cantonal approval. Students should secure institution acceptance and arrange health insurance. Long-term residency leads to local registration and tax obligations; consider local legal advice for complex cases.',
+                date: 'Feb 16, 2026',
+                author: 'Swiss Immigration Advisor'
+            },
+            related: [ { title: 'Work Permits Switzerland: Employer Sponsorship & Cantonal Rules', excerpt: 'How to obtain a Swiss work permit and what canton approvals mean', date: 'Feb 14, 2026' }, { title: 'Living in Switzerland: Cost, Healthcare & Residency', excerpt: 'Practical guide to living and working in Switzerland', date: 'Feb 12, 2026' } ]
+        },
+        processingInfo: { standard: '2-12 weeks', expedited: 'Varies', cost: 'Variable', notes: 'Cantonal procedures may apply' },
+        tips: [ 'Arrange health insurance before arrival', 'Prepare for higher cost of living', 'Check canton-specific work rules' ],
+        govLink: 'https://www.sem.admin.ch/sem/en/home.html'
     }
 };
 

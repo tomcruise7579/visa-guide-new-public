@@ -16,6 +16,40 @@
     --success-color: #10b981;
 }
 
+/* UI Enhancements */
+.filter-bar {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0 30px;
+}
+.filter-btn {
+    background: white;
+    border: 1px solid var(--border-color);
+    padding: 8px 14px;
+    border-radius: 999px;
+    cursor: pointer;
+    color: var(--text-dark);
+    font-weight: 600;
+    transition: transform 0.18s ease, background 0.18s ease, color 0.18s ease, box-shadow 0.18s ease;
+}
+.filter-btn:hover { transform: translateY(-4px); box-shadow: 0 6px 18px rgba(0,0,0,0.08); }
+.filter-btn.active { background: linear-gradient(90deg,var(--primary-color),var(--secondary-color)); color: white; border-color: transparent; }
+
+/* Reveal animation for cards */
+.reveal { opacity: 0; transform: translateY(16px) scale(0.995); transition: opacity 0.6s ease, transform 0.6s cubic-bezier(.2,.8,.2,1); }
+.reveal.visible { opacity: 1; transform: translateY(0) scale(1); }
+
+/* Decorative hover tilt for destination cards */
+.destination-card { transform-origin: center; will-change: transform; }
+.destination-card .card-header { transition: transform 0.35s ease; }
+.destination-card:hover .card-header { transform: translateY(-6px) scale(1.03); }
+
+/* Animated stat counter style */
+.stat-card h3 { transition: all 0.6s ease; }
+
+
 html {
     scroll-behavior: smooth;
 }
@@ -23,7 +57,9 @@ html {
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: var(--text-dark);
-    background-color: #ffffff;
+    /* subtle gradient background for depth */
+    background: linear-gradient(180deg, #f8fafc 0%, #eef2ff 50%, #ffffff 100%);
+    background-attachment: fixed;
     line-height: 1.6;
 }
 
@@ -289,11 +325,27 @@ body {
 }
 
 .card-header {
-    font-size: 60px;
-    padding: 20px;
+    font-size: 42px;
+    padding: 0;
+    height: 120px;
     text-align: center;
     background-color: var(--light-bg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: relative;
 }
+.card-header::after{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(0,0,0,0.18), rgba(0,0,0,0.35));
+    border-radius: 0;
+}
+.card-header > * { position: relative; z-index: 2; }
 
 .destination-card h3 {
     padding: 20px 20px 10px;

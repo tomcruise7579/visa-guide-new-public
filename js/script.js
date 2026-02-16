@@ -4,26 +4,27 @@
 
 // Country Data
 const countries = [
-    { name: 'United States', region: 'Americas', visas: ['Tourist (B1/B2)', 'Work (H1-B)', 'Student (F-1)'], emoji: '🇺🇸' },
-    { name: 'Canada', region: 'Americas', visas: ['Express Entry', 'Student', 'Visitor'], emoji: '🇨🇦' },
-    { name: 'United Kingdom', region: 'Europe', visas: ['Skilled Worker', 'Student', 'Visitor'], emoji: '🇬🇧' },
-    { name: 'Germany', region: 'Europe', visas: ['EU Blue Card', 'Student', 'Residence'], emoji: '🇩🇪' },
-    { name: 'France', region: 'Europe', visas: ['Talent Passport', 'Student', 'Visitor'], emoji: '🇫🇷' },
-    { name: 'Japan', region: 'Asia', visas: ['Work', 'Student', 'Trainee', 'Tourist'], emoji: '🇯🇵' },
-    { name: 'Singapore', region: 'Asia', visas: ['Employment Pass', 'Student', 'Visitor'], emoji: '🇸🇬' },
-    { name: 'Australia', region: 'Oceania', visas: ['Skilled Migration', 'Student', 'Work Holiday'], emoji: '🇦🇺' },
-    { name: 'New Zealand', region: 'Oceania', visas: ['Skilled Migration', 'Student', 'Work'], emoji: '🇳🇿' },
-    { name: 'United Arab Emirates', region: 'Middle East', visas: ['Employment', 'Investor', 'Visitor'], emoji: '🇦🇪' },
-    { name: 'South Africa', region: 'Africa', visas: ['General Work', 'Study', 'Visitor'], emoji: '🇿🇦' },
-    { name: 'Mexico', region: 'Americas', visas: ['Temporary', 'Student', 'Investor', 'Tourist'], emoji: '🇲🇽' },
-    { name: 'Thailand', region: 'Asia', visas: ['Tourist', 'Education', 'Long Term Resident'], emoji: '🇹🇭' },
-    { name: 'Spain', region: 'Europe', visas: ['Digital Nomad', 'Student', 'Visitor'], emoji: '🇪🇸' },
-    { name: 'Portugal', region: 'Europe', visas: ['Digital Nomad', 'Student', 'D-7 Passive Income'], emoji: '🇵🇹' },
-    { name: 'Israel', region: 'Middle East', visas: ['Tourist', 'Student', 'Work'], emoji: '🇮🇱' },
-    { name: 'South Korea', region: 'Asia', visas: ['Work', 'Student', 'Investor'], emoji: '🇰🇷' },
-    { name: 'Malaysia', region: 'Asia', visas: ['MM2H', 'Student', 'Work'], emoji: '🇲🇾' },
-    { name: 'Philippines', region: 'Asia', visas: ['Tourist', 'Study', 'Work'], emoji: '🇵🇭' },
-    { name: 'Switzerland', region: 'Europe', visas: ['Employment', 'Student', 'Visitor'], emoji: '🇨🇭' },
+    { name: 'United States', code: 'us', region: 'Americas', visas: ['Tourist (B1/B2)', 'Work (H1-B)', 'Student (F-1)'], emoji: '🇺🇸' },
+    { name: 'Canada', code: 'ca', region: 'Americas', visas: ['Express Entry', 'Student', 'Visitor'], emoji: '🇨🇦' },
+    { name: 'United Kingdom', code: 'gb', region: 'Europe', visas: ['Skilled Worker', 'Student', 'Visitor'], emoji: '🇬🇧' },
+    { name: 'Germany', code: 'de', region: 'Europe', visas: ['EU Blue Card', 'Student', 'Residence'], emoji: '🇩🇪' },
+    { name: 'France', code: 'fr', region: 'Europe', visas: ['Talent Passport', 'Student', 'Visitor'], emoji: '🇫🇷' },
+    { name: 'Japan', code: 'jp', region: 'Asia', visas: ['Work', 'Student', 'Trainee', 'Tourist'], emoji: '🇯🇵' },
+    { name: 'Singapore', code: 'sg', region: 'Asia', visas: ['Employment Pass', 'Student', 'Visitor'], emoji: '🇸🇬' },
+    { name: 'Australia', code: 'au', region: 'Oceania', visas: ['Skilled Migration', 'Student', 'Work Holiday'], emoji: '🇦🇺' },
+    { name: 'New Zealand', code: 'nz', region: 'Oceania', visas: ['Skilled Migration', 'Student', 'Work'], emoji: '🇳🇿' },
+    { name: 'United Arab Emirates', code: 'ae', region: 'Middle East', visas: ['Employment', 'Investor', 'Visitor'], emoji: '🇦🇪' },
+    { name: 'Azerbaijan', code: 'az', region: 'Asia', visas: ['e-Visa', 'Business', 'Work Permit'], emoji: '🇦🇿' },
+    { name: 'South Africa', code: 'za', region: 'Africa', visas: ['General Work', 'Study', 'Visitor'], emoji: '🇿🇦' },
+    { name: 'Mexico', code: 'mx', region: 'Americas', visas: ['Temporary', 'Student', 'Investor', 'Tourist'], emoji: '🇲🇽' },
+    { name: 'Thailand', code: 'th', region: 'Asia', visas: ['Tourist', 'Education', 'Long Term Resident'], emoji: '🇹🇭' },
+    { name: 'Spain', code: 'es', region: 'Europe', visas: ['Digital Nomad', 'Student', 'Visitor'], emoji: '🇪🇸' },
+    { name: 'Portugal', code: 'pt', region: 'Europe', visas: ['Digital Nomad', 'Student', 'D-7 Passive Income'], emoji: '🇵🇹' },
+    { name: 'Israel', code: 'il', region: 'Middle East', visas: ['Tourist', 'Student', 'Work'], emoji: '🇮🇱' },
+    { name: 'South Korea', code: 'kr', region: 'Asia', visas: ['Work', 'Student', 'Investor'], emoji: '🇰🇷' },
+    { name: 'Malaysia', code: 'my', region: 'Asia', visas: ['MM2H', 'Student', 'Work'], emoji: '🇲🇾' },
+    { name: 'Philippines', code: 'ph', region: 'Asia', visas: ['Tourist', 'Study', 'Work'], emoji: '🇵🇭' },
+    { name: 'Switzerland', code: 'ch', region: 'Europe', visas: ['Employment', 'Student', 'Visitor'], emoji: '🇨🇭' },
 ];
 
 // Visa Types Data
@@ -47,7 +48,27 @@ const navMenu = document.querySelector('.nav-menu');
 document.addEventListener('DOMContentLoaded', function() {
     loadCountries();
     setupEventListeners();
+    updateStats();
 });
+
+// Update homepage stats (countries, visa types, articles)
+function updateStats() {
+    try {
+        const countriesEl = document.getElementById('countriesCount');
+        const visaTypesEl = document.getElementById('visaTypesCount');
+        const articlesEl = document.getElementById('articlesCount');
+
+        if (countriesEl) countriesEl.textContent = `${countries.length}+`;
+        if (visaTypesEl) visaTypesEl.textContent = `${visaTypes.length}+`;
+        if (articlesEl) {
+            // `blogPosts` is defined in js/blogs.js (if present)
+            const total = (window.blogPosts && Array.isArray(window.blogPosts)) ? window.blogPosts.length : '100';
+            articlesEl.textContent = typeof total === 'number' ? `${total}+` : `${total}+`;
+        }
+    } catch (err) {
+        console.warn('Could not update stats:', err);
+    }
+}
 
 // Event Listeners
 function setupEventListeners() {
@@ -84,8 +105,9 @@ function loadCountries() {
 function createDestinationCard(country) {
     const card = document.createElement('div');
     card.className = 'destination-card';
+    const flagUrl = country.code ? `https://flagcdn.com/w320/${country.code}.png` : '';
     card.innerHTML = `
-        <div class="card-header">${country.emoji}</div>
+        <div class="card-header" style="background-image: url('${flagUrl}');">${country.emoji}</div>
         <h3>${country.name}</h3>
         <p class="visa-info">${country.visas.join(', ')}</p>
         <a href="pages/country-details.html?country=${encodeURIComponent(country.name)}" class="btn-link">Learn More →</a>

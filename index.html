@@ -41,15 +41,15 @@
     <!-- Quick Stats -->
     <section class="stats">
         <div class="stat-card">
-            <h3>195+</h3>
+            <h3 id="countriesCount">195+</h3>
             <p>Countries & Regions</p>
         </div>
         <div class="stat-card">
-            <h3>50+</h3>
+            <h3 id="visaTypesCount">50+</h3>
             <p>Visa Types</p>
         </div>
         <div class="stat-card">
-            <h3>100`+</h3>
+            <h3 id="articlesCount">100+</h3>
             <p>Travel Articles</p>
         </div>
     </section>
@@ -136,6 +136,9 @@
     <section class="section">
         <div class="container">
             <h2>Top Visa Destinations</h2>
+            <div id="regionFilters" class="filter-bar" aria-label="Filter destinations by region">
+                <!-- Buttons populated by js/ui.js -->
+            </div>
             <div id="topDestinations" class="destinations-grid">
                 <div class="destination-card">
                     <div class="card-header">🇺🇸</div>
@@ -182,36 +185,36 @@
         <div class="container">
             <h2>Essential Resources</h2>
             <div class="resources-grid">
-                <div class="resource-card">
+                <a href="pages/checklist.html" class="resource-card">
                     <i class="fas fa-list-check"></i>
                     <h3>Checklists</h3>
                     <p>Document requirements and preparation checklists for visa applications</p>
-                </div>
-                <div class="resource-card">
+                </a>
+                <a href="pages/visa-costs.html" class="resource-card">
                     <i class="fas fa-money-bill-wave"></i>
                     <h3>Visa Costs</h3>
                     <p>Detailed information about visa fees and application costs</p>
-                </div>
-                <div class="resource-card">
+                </a>
+                <a href="pages/processing-times.html" class="resource-card">
                     <i class="fas fa-calendar-alt"></i>
                     <h3>Processing Times</h3>
                     <p>Typical processing times for different visa categories</p>
-                </div>
-                <div class="resource-card">
+                </a>
+                <a href="pages/insurance.html" class="resource-card">
                     <i class="fas fa-shield-alt"></i>
                     <h3>Insurance</h3>
                     <p>Travel and health insurance information and recommendations</p>
-                </div>
-                <div class="resource-card">
+                </a>
+                <a href="pages/travel-tips.html" class="resource-card">
                     <i class="fas fa-book"></i>
                     <h3>Travel Tips</h3>
                     <p>Useful tips for international travel and moving abroad</p>
-                </div>
-                <div class="resource-card">
+                </a>
+                <a href="pages/faq.html" class="resource-card">
                     <i class="fas fa-question-circle"></i>
                     <h3>FAQ</h3>
                     <p>Frequently asked questions about visas and immigration</p>
-                </div>
+                </a>
             </div>
         </div>
     </section>
@@ -234,10 +237,10 @@
             <div class="footer-section">
                 <h4>Quick Links</h4>
                 <ul>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Terms & Conditions</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                    <li><a href="#">Blog</a></li>
+                    <li><a href="pages/privacy.html">Privacy Policy</a></li>
+                    <li><a href="pages/terms.html">Terms & Conditions</a></li>
+                    <li><a href="pages/contact.html">Contact Us</a></li>
+                    <li><a href="pages/blog.html">Blog</a></li>
                 </ul>
             </div>
             <div class="footer-section">
@@ -264,6 +267,8 @@
         </div>
     </footer>
 
+    <script src="js/blogs.js"></script>
+    <script src="js/ui.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
