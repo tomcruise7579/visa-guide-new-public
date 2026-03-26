@@ -590,21 +590,21 @@ body {
 
 .world-map-container {
     background: white;
-    border-radius: 12px;
-    padding: 20px;
+    border-radius: 6px;
+    padding: 2px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .world-map-image {
     width: 100%;
-    height: auto;
+    height: 100%;
     display: block;
-    border-radius: 8px;
+    border-radius: 4px;
 }
 
 .world-map {
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 
 .visa-quick-info {
