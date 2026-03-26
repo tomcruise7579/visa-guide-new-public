@@ -1078,6 +1078,17 @@ img {
     border-left: 4px solid var(--primary-color);
 }
 
+/* Make featured blog and blog cards use full available width and be more prominent */
+.featured-blog {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.blog-card {
+    width: 100%;
+    padding: 24px;
+}
+
 .blog-post h4 {
     font-size: 18px;
     margin-bottom: 12px;
@@ -1262,6 +1273,11 @@ img {
 
     .blog-sidebar {
         gap: 20px;
+    }
+
+    /* allow sidebar boxes to be slightly larger on tablet landscape */
+    .blog-sidebar .featured-blog, .blog-sidebar .blog-card {
+        padding: 22px;
     }
 
     .featured-blog,
