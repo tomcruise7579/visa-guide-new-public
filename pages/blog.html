@@ -16,6 +16,11 @@
         .blog-feature { margin-bottom: 2rem; }
         .meta { color: #666; font-size: 0.9rem; margin-bottom: 0.5rem }
         .recent-item { margin-bottom: 1rem; }
+        /* Featured hero styles */
+        .featured-hero { margin: 30px 0; }
+        .featured-hero .featured-blog { background: white; padding: 30px; border-radius: 12px; box-shadow: 0 6px 24px rgba(0,0,0,0.08); }
+        .featured-hero .featured-blog h2 { margin: 0 0 12px 0; font-size: 24px; color: var(--primary-color); }
+        .featured-hero .blog-card { background: var(--light-bg); padding: 28px; border-left-width: 6px; }
     </style>
 </head>
 <body>
@@ -34,6 +39,15 @@
 
     <div class="container">
         <h1>Blog & Insights</h1>
+        <!-- Featured article appears first, full-width -->
+        <section class="featured-hero">
+            <div class="featured-blog">
+                <h2>Featured Article</h2>
+                <div id="featuredArticle" class="blog-card">
+                    <p>Loading featured article...</p>
+                </div>
+            </div>
+        </section>
         <div class="blog-page">
             <main class="blog-main" id="blogContainer">
                 <p>Loading articles...</p>
