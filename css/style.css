@@ -543,6 +543,234 @@ body {
     }
 }
 
+/* ===== NEW VISA INFORMATION SECTION STYLES ===== */
+
+/* Comprehensive Visa Information Section */
+.visa-info-section {
+    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+}
+
+.visa-info-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.visa-info-text h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.visa-description {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.visa-description h3 {
+    font-size: 18px;
+    color: var(--primary-color);
+    margin: 0;
+    font-weight: 700;
+}
+
+.visa-description p {
+    margin: 0;
+    line-height: 1.8;
+    color: var(--text-dark);
+}
+
+.visa-info-visual {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.world-map-container {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.world-map {
+    width: 100%;
+    height: auto;
+}
+
+.visa-quick-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.info-box {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.info-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.info-box i {
+    font-size: 32px;
+    color: var(--primary-color);
+    margin-bottom: 12px;
+}
+
+.info-box h4 {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin: 10px 0 8px 0;
+}
+
+.info-box p {
+    font-size: 14px;
+    color: var(--text-light);
+    margin: 0;
+}
+
+/* ===== VISA CATEGORIES GRID ===== */
+
+.section-subtitle {
+    text-align: center;
+    color: var(--text-light);
+    font-size: 18px;
+    margin: -40px 0 40px 0 !important;
+    font-weight: 500;
+}
+
+.visa-categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.visa-category-card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    border-top: 4px solid var(--primary-color);
+    display: flex;
+    flex-direction: column;
+}
+
+.visa-category-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.category-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.category-icon i {
+    font-size: 28px;
+    color: white;
+}
+
+.visa-category-card h3 {
+    font-size: 20px;
+    color: var(--text-dark);
+    margin: 0 0 15px 0;
+    font-weight: 700;
+}
+
+.visa-category-card p {
+    color: var(--text-light);
+    line-height: 1.7;
+    margin: 0 0 20px 0;
+    flex-grow: 1;
+}
+
+.visa-category-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.visa-category-card ul li {
+    color: var(--text-dark);
+    font-size: 14px;
+    padding-left: 25px;
+    position: relative;
+}
+
+.visa-category-card ul li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--success-color);
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* ===== RESPONSIVE UPDATES ===== */
+
+@media (max-width: 768px) {
+    .visa-info-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .visa-info-text h2 {
+        text-align: center;
+    }
+
+    .visa-quick-info {
+        grid-template-columns: 1fr;
+    }
+
+    .visa-categories-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+}
+
+/* ===== PERFORMANCE OPTIMIZATIONS ===== */
+
+/* Lazy loading placeholder */
+img {
+    will-change: contents;
+}
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* Light optimization: CSS containment for better performance */
+.card, .visa-category-card, .info-box {
+    contain: layout style paint;
+}
+
+
+
 /* Button Styles */
 .btn {
     display: inline-block;
