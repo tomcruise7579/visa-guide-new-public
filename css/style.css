@@ -591,31 +591,15 @@ body {
 .world-map-container {
     background: white;
     border-radius: 12px;
-    /* create an aspect-ratio box so the image can cover and be zoomed */
-    position: relative;
-    padding: 0;
-    overflow: hidden;
+    padding: 20px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    /* default aspect ratio ~16:9 */
-    padding-top: 56.25%;
 }
 
 .world-map-image {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    /* make image cover the container and be slightly zoomed */
-    width: auto;
-    height: 100%;
-    transform: translate(-50%, -50%) scale(1.08);
-    transform-origin: center center;
-    object-fit: cover;
+    width: 100%;
+    height: auto;
     display: block;
     border-radius: 8px;
-}
-
-.world-map-image.zoom-strong {
-    transform: translate(-50%, -50%) scale(1.18);
 }
 
 .world-map {
